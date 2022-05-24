@@ -6,6 +6,7 @@ import AddTodo from './components/AddTodo';
 import { selector, useRecoilState, useRecoilValue } from 'recoil';
 import atoms from './store/atoms';
 import selectors from './store/selectors';
+import Hooks from './components/Hooks';
 
 const defaultList = [{name: 'lee'}];
 
@@ -27,6 +28,8 @@ function App() {
 
   return (
     <div>
+      <Hooks />
+      <hr />
       <h1>Test</h1>
       <TodoList list={list} />
       <AddTodo />
